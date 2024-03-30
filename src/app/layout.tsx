@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import { NextUIProvider } from "@nextui-org/react";
 
 const notoSansKr = Noto_Sans_KR({
   weight: ["300", "400", "700"],
@@ -45,6 +46,30 @@ export default function RootLayout({
             className="border-black hover:bg-gray-100 p-1 rounded-md"
           >
             리뷰 캐러셀
+          </Link>
+          <Link
+            href="/game4"
+            className="border-black hover:bg-gray-100 p-1 rounded-md"
+          >
+            반응형 네비게이션
+          </Link>
+          <Link
+            href="/game5"
+            className="border-black hover:bg-gray-100 p-1 rounded-md"
+          >
+            사이드바
+          </Link>
+          <Link
+            href="/game6"
+            className="border-black hover:bg-gray-100 p-1 rounded-md"
+          >
+            모달
+          </Link>
+          <Link
+            href="/game7"
+            className="border-black hover:bg-gray-100 p-1 rounded-md"
+          >
+            FAQ
           </Link>
         </ul>
         {children}
