@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
+const notoSansKr = Noto_Sans_KR({
+  weight: ["300", "400", "700"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +20,35 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={notoSansKr.className}>
+        <ul className="p-4">
+          <Link
+            href="/"
+            className="border-black hover:bg-gray-100 p-1 rounded-md"
+          >
+            홈
+          </Link>
+          <Link
+            href="/game1"
+            className="border-black hover:bg-gray-100 p-1 rounded-md"
+          >
+            컬러 플리퍼
+          </Link>
+          <Link
+            href="/game2"
+            className="border-black hover:bg-gray-100 p-1 rounded-md"
+          >
+            카운터
+          </Link>
+          <Link
+            href="/game3"
+            className="border-black hover:bg-gray-100 p-1 rounded-md"
+          >
+            리뷰 캐러셀
+          </Link>
+        </ul>
+        {children}
+      </body>
     </html>
   );
 }
