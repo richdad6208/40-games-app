@@ -71,6 +71,12 @@ export default function RootLayout({
           >
             FAQ
           </Link>
+          <Link
+            href="/game8"
+            className="border-black hover:bg-gray-100 p-1 rounded-md"
+          >
+            식당 메뉴판
+          </Link>
         </ul>
         {children}
       </body>
