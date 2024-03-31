@@ -77,6 +77,12 @@ export default function RootLayout({
           >
             식당 메뉴판
           </Link>
+          <Link
+            href="/game9"
+            className="border-black hover:bg-gray-100 p-1 rounded-md"
+          >
+            비디오 배경
+          </Link>
         </ul>
         {children}
       </body>
