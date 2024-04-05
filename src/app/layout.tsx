@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={notoSansKr.className}>
         <ul className="p-4">
           <Link
@@ -82,6 +82,12 @@ export default function RootLayout({
             className="border-black hover:bg-gray-100 p-1 rounded-md"
           >
             비디오 배경
+          </Link>
+          <Link
+            href="/game10"
+            className="border-black hover:bg-gray-100 p-1 rounded-md"
+          >
+            스크롤
           </Link>
         </ul>
         {children}
