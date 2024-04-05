@@ -83,6 +83,12 @@ export default function RootLayout({
           >
             비디오 배경
           </Link>
+          <Link
+            href="/game10"
+            className="border-black hover:bg-gray-100 p-1 rounded-md"
+          >
+            서로 다른 내용 탭
+          </Link>
         </ul>
         {children}
       </body>
