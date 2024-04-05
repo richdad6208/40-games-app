@@ -89,6 +89,12 @@ export default function RootLayout({
           >
             스크롤
           </Link>
+          <Link
+            href="/game11"
+            className="border-black hover:bg-gray-100 p-1 rounded-md"
+          >
+            서로다른 내용
+          </Link>
         </ul>
         {children}
       </body>
