@@ -5,7 +5,7 @@ import Link from "next/link";
 import { NextUIProvider } from "@nextui-org/react";
 
 const notoSansKr = Noto_Sans_KR({
-  weight: ["300", "400", "700"],
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
@@ -94,6 +94,18 @@ export default function RootLayout({
             className="border-black hover:bg-gray-100 p-1 rounded-md"
           >
             서로다른 내용
+          </Link>
+          <Link
+            href="/game12"
+            className="border-black hover:bg-gray-100 p-1 rounded-md"
+          >
+            카운트다운 시계
+          </Link>
+          <Link
+            href="/game13"
+            className="border-black hover:bg-gray-100 p-1 rounded-md"
+          >
+            로렘입숨 만들기
           </Link>
         </ul>
         {children}
